@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="tn.piapp.ui.ToolController"
+      spacing="0" style="-fx-background-color: #F6F7FB;">
+
+    <!-- Toolbar row -->
+    <HBox spacing="8" alignment="CENTER_LEFT" style="-fx-padding: 16 20 12 20;">
+        <Button fx:id="btnAdd" text="+ Add Tool" styleClass="btn-add" onAction="#onAdd"/>
+        <Button fx:id="btnEdit" text="Edit" styleClass="btn-edit" onAction="#onEdit"/>
+        <Button fx:id="btnDelete" text="Delete" styleClass="btn-delete" onAction="#onDelete"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <ProgressIndicator fx:id="progressIndicator" prefWidth="24" prefHeight="24"/>
+        <Button fx:id="btnRefresh" text="↻ Refresh" styleClass="btn-refresh" onAction="#onRefresh"/>
+    </HBox>
+
+    <!-- Card wrapping the TableView -->
+    <VBox VBox.vgrow="ALWAYS" styleClass="card"
+          style="-fx-margin: 0 20 0 20;">
+        <padding>
+            <Insets top="0" right="20" bottom="0" left="20"/>
+        </padding>
+        <TableView fx:id="tableView" VBox.vgrow="ALWAYS"
+                   style="-fx-background-color: transparent; -fx-border-width: 0;">
+            <columns>
+                <TableColumn fx:id="colName" text="NAME" prefWidth="160"/>
+                <TableColumn fx:id="colDescription" text="DESCRIPTION" prefWidth="200"/>
+                <TableColumn fx:id="colPricePerDay" text="PRICE/DAY" prefWidth="100"/>
+                <TableColumn fx:id="colStockQuantity" text="STOCK" prefWidth="80"/>
+                <TableColumn fx:id="colLocation" text="LOCATION" prefWidth="130"/>
+                <TableColumn fx:id="colIsActive" text="ACTIVE" prefWidth="70"/>
+                <TableColumn fx:id="colImageName" text="IMAGE" prefWidth="120"/>
+            </columns>
+        </TableView>
+    </VBox>
+
+    <!-- Status bar -->
+    <HBox styleClass="status-bar" alignment="CENTER_LEFT" spacing="8" VBox.vgrow="NEVER">
+        <Label fx:id="lblStatus" text="Ready" styleClass="status-label"/>
+    </HBox>
+
+</VBox>

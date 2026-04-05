@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="tn.piapp.ui.MainController"
+      spacing="0">
+
+    <!-- 4px gradient brand strip -->
+    <Pane styleClass="gradient-strip" minHeight="4" maxHeight="4" prefHeight="4"
+          VBox.vgrow="NEVER"/>
+
+    <!-- White header bar -->
+    <HBox styleClass="header-bar" alignment="CENTER_LEFT" spacing="10"
+          minHeight="56" maxHeight="56" prefHeight="56" VBox.vgrow="NEVER">
+        <padding>
+            <Insets top="0" right="24" bottom="0" left="24"/>
+        </padding>
+
+        <!-- Brand icon: rounded circle with "R" -->
+        <StackPane styleClass="brand-icon">
+            <Label text="R" styleClass="brand-icon-text"/>
+        </StackPane>
+
+        <!-- Brand name -->
+        <HBox spacing="0" alignment="CENTER_LEFT">
+            <Label text="Rent" styleClass="brand-name"/>
+            <Label text="All" styleClass="brand-name-accent"/>
+        </HBox>
+
+        <!-- Spacer -->
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <!-- Connected indicator -->
+        <Label fx:id="lblConnected" text="● Connected" styleClass="status-label"
+               style="-fx-text-fill: #27AE60;"/>
+    </HBox>
+
+    <!-- TabPane (grows to fill remaining space) -->
+    <TabPane fx:id="tabPane" VBox.vgrow="ALWAYS" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Services" closable="false">
+                <content>
+                    <fx:include source="service.fxml" fx:id="service"/>
+                </content>
+            </Tab>
+            <Tab text="Tools" closable="false">
+                <content>
+                    <fx:include source="tool.fxml" fx:id="tool"/>
+                </content>
+            </Tab>
+        </tabs>
+    </TabPane>
+
+</VBox>
