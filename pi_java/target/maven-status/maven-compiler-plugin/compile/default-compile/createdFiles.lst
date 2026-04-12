@@ -1,4 +1,5 @@
 tn/piapp/ui/ToolController$1.class
+tn/piapp/ui/ToolController$2.class
 tn/piapp/ui/ToolController.class
 tn/piapp/ui/ToolFormDialog.class
 tn/piapp/dao/ServiceDao.class
@@ -9,6 +10,7 @@ tn/piapp/util/Alerts.class
 tn/piapp/model/Tool.class
 tn/piapp/db/DbConnection.class
 module-info.class
+tn/piapp/ui/ServiceController$2.class
 tn/piapp/ui/ServiceFormDialog.class
 tn/piapp/util/Validation.class
 tn/piapp/model/Service.class

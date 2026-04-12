@@ -15,6 +15,7 @@
         <Button fx:id="btnEdit" text="Edit" styleClass="btn-edit" onAction="#onEdit"/>
         <Button fx:id="btnDelete" text="Delete" styleClass="btn-delete" onAction="#onDelete"/>
         <Region HBox.hgrow="ALWAYS"/>
+        <TextField fx:id="tfSearch" promptText="🔍  Search tools..." styleClass="search-field"/>
         <ProgressIndicator fx:id="progressIndicator" prefWidth="24" prefHeight="24"/>
         <Button fx:id="btnRefresh" text="↻ Refresh" styleClass="btn-refresh" onAction="#onRefresh"/>
     </HBox>
