@@ -16,6 +16,7 @@ public class Tool {
     private LocalDateTime updatedAt;
     private int hostId;
     private String imageName;
+    private Integer categoryId; // nullable; maps to category_id column
 
     public Tool() {}
 
@@ -68,4 +69,7 @@ public class Tool {
 
     public String getImageName() { return imageName; }
     public void setImageName(String imageName) { this.imageName = imageName; }
+
+    public Integer getCategoryId() { return categoryId; }
+    public void setCategoryId(Integer categoryId) { this.categoryId = categoryId; }
 }

@@ -1,9 +1,17 @@
 /Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/module-info.java
+/Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/dao/CategoryDao.java
 /Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/dao/ServiceDao.java
 /Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/dao/ToolDao.java
 /Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/db/DbConnection.java
+/Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/model/Category.java
 /Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/model/Service.java
 /Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/model/Tool.java
+/Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/service/CategorySuggestionResult.java
+/Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/service/CategorySuggestionService.java
+/Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/service/PriceSuggestionResult.java
+/Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/service/PriceSuggestionService.java
+/Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/service/QualityScoreResult.java
+/Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/service/QualityScoreService.java
 /Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/ui/MainApp.java
 /Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/ui/MainController.java
 /Users/medamineamma/Desktop/java_pi/pi_java/src/main/java/tn/piapp/ui/ServiceController.java

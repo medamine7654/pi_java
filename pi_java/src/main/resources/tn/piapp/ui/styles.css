@@ -389,3 +389,150 @@
 .search-field:focused {
     -fx-border-color: #AC3AD3;
 }
+
+/* ============================================================
+   Advanced Features — Approval Workflow + Quality Score
+   ============================================================ */
+
+/* --- Approve / Hide action buttons --- */
+.btn-approve {
+    -fx-background-color: #E6F9F0;
+    -fx-text-fill: #1A9E5C;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 999;
+    -fx-border-color: #1A9E5C;
+    -fx-border-width: 1;
+    -fx-border-radius: 999;
+    -fx-padding: 3 10 3 10;
+    -fx-cursor: hand;
+}
+
+.btn-approve:hover {
+    -fx-background-color: #C8F0DC;
+}
+
+.btn-hide {
+    -fx-background-color: #FFF3E0;
+    -fx-text-fill: #E07B00;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 999;
+    -fx-border-color: #E07B00;
+    -fx-border-width: 1;
+    -fx-border-radius: 999;
+    -fx-padding: 3 10 3 10;
+    -fx-cursor: hand;
+}
+
+.btn-hide:hover {
+    -fx-background-color: #FFE0B2;
+}
+
+/* --- Filter bar radio buttons --- */
+.filter-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #555;
+}
+
+.filter-radio {
+    -fx-font-size: 12px;
+    -fx-text-fill: #555;
+    -fx-cursor: hand;
+}
+
+.filter-radio:selected {
+    -fx-text-fill: #AC3AD3;
+}
+
+/* --- Quality score badges --- */
+.badge-quality-excellent {
+    -fx-background-color: #E6F9F0;
+    -fx-text-fill: #1A9E5C;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 999;
+    -fx-padding: 3 10 3 10;
+    -fx-cursor: hand;
+}
+
+.badge-quality-good {
+    -fx-background-color: #FFF8E1;
+    -fx-text-fill: #B8860B;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 999;
+    -fx-padding: 3 10 3 10;
+    -fx-cursor: hand;
+}
+
+.badge-quality-poor {
+    -fx-background-color: #FDEAEA;
+    -fx-text-fill: #C0392B;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 999;
+    -fx-padding: 3 10 3 10;
+    -fx-cursor: hand;
+}
+
+/* --- Price suggestion label in form dialogs --- */
+.price-suggestion-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: #555;
+    -fx-font-style: italic;
+    -fx-padding: 2 0 2 0;
+}
+
+/* --- Category suggestion label + apply button --- */
+.category-suggestion-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: #AC3AD3;
+    -fx-font-style: italic;
+}
+
+.btn-apply-suggestion {
+    -fx-background-color: transparent;
+    -fx-text-fill: #AC3AD3;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-border-color: #AC3AD3;
+    -fx-border-width: 1;
+    -fx-border-radius: 999;
+    -fx-background-radius: 999;
+    -fx-padding: 2 8 2 8;
+    -fx-cursor: hand;
+}
+
+.btn-apply-suggestion:hover {
+    -fx-background-color: #F3E8FB;
+}
+
+/* --- Filter bar combo and text field --- */
+.filter-combo {
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+    -fx-border-color: #E6E8EF;
+    -fx-border-radius: 6;
+    -fx-border-width: 1;
+    -fx-font-size: 12px;
+}
+
+.filter-combo:focused {
+    -fx-border-color: #AC3AD3;
+}
+
+.filter-field {
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+    -fx-border-color: #E6E8EF;
+    -fx-border-radius: 6;
+    -fx-border-width: 1;
+    -fx-padding: 4 8 4 8;
+    -fx-font-size: 12px;
+}
+
+.filter-field:focused {
+    -fx-border-color: #AC3AD3;
+}

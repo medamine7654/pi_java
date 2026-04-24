@@ -20,6 +20,42 @@
         <Button fx:id="btnRefresh" text="↻ Refresh" styleClass="btn-refresh" onAction="#onRefresh"/>
     </HBox>
 
+    <!-- Filter bar: approval toggle + advanced filters + clear button -->
+    <HBox fx:id="filterBar" spacing="10" alignment="CENTER_LEFT"
+          style="-fx-padding: 0 20 10 20; -fx-background-color: white;
+                 -fx-border-color: #E6E8EF; -fx-border-width: 0 0 1 0;">
+        <!-- Approval toggle -->
+        <Label text="Show:" styleClass="filter-label"/>
+        <RadioButton fx:id="rbAll" text="All" styleClass="filter-radio"/>
+        <RadioButton fx:id="rbActiveOnly" text="Active" styleClass="filter-radio"/>
+        <RadioButton fx:id="rbPending" text="Pending" styleClass="filter-radio"/>
+
+        <Separator orientation="VERTICAL" style="-fx-padding: 4 4 4 4;"/>
+
+        <!-- Category filter -->
+        <Label text="Category:" styleClass="filter-label"/>
+        <ComboBox fx:id="cbCategoryFilter" promptText="All Categories"
+                  prefWidth="140" styleClass="filter-combo"/>
+
+        <!-- Location filter -->
+        <Label text="Location:" styleClass="filter-label"/>
+        <TextField fx:id="tfLocationFilter" promptText="Any location"
+                   prefWidth="110" styleClass="filter-field"/>
+
+        <!-- Price range -->
+        <Label text="Price:" styleClass="filter-label"/>
+        <TextField fx:id="tfMinPrice" promptText="Min" prefWidth="60" styleClass="filter-field"/>
+        <Label text="–" styleClass="filter-label"/>
+        <TextField fx:id="tfMaxPrice" promptText="Max" prefWidth="60" styleClass="filter-field"/>
+
+        <!-- Sort -->
+        <Label text="Sort:" styleClass="filter-label"/>
+        <ComboBox fx:id="cbSortBy" prefWidth="160" styleClass="filter-combo"/>
+
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="btnClearFilters" text="✕ Clear" styleClass="btn-refresh" onAction="#onClearFilters"/>
+    </HBox>
+
     <!-- Card wrapping the TableView -->
     <VBox VBox.vgrow="ALWAYS" styleClass="card"
           style="-fx-margin: 0 20 0 20;">
@@ -29,13 +65,13 @@
         <TableView fx:id="tableView" VBox.vgrow="ALWAYS"
                    style="-fx-background-color: transparent; -fx-border-width: 0;">
             <columns>
-                <TableColumn fx:id="colName" text="NAME" prefWidth="160"/>
-                <TableColumn fx:id="colDescription" text="DESCRIPTION" prefWidth="200"/>
-                <TableColumn fx:id="colBasePrice" text="BASE PRICE" prefWidth="100"/>
-                <TableColumn fx:id="colDurationMinutes" text="DURATION (MIN)" prefWidth="120"/>
-                <TableColumn fx:id="colLocation" text="LOCATION" prefWidth="130"/>
-                <TableColumn fx:id="colIsActive" text="ACTIVE" prefWidth="70"/>
-                <TableColumn fx:id="colImageName" text="IMAGE" prefWidth="120"/>
+                <TableColumn fx:id="colName" text="NAME" prefWidth="130"/>
+                <TableColumn fx:id="colDescription" text="DESCRIPTION" prefWidth="160"/>
+                <TableColumn fx:id="colBasePrice" text="BASE PRICE" prefWidth="85"/>
+                <TableColumn fx:id="colDurationMinutes" text="DURATION (MIN)" prefWidth="105"/>
+                <TableColumn fx:id="colLocation" text="LOCATION" prefWidth="100"/>
+                <TableColumn fx:id="colIsActive" text="STATUS" prefWidth="75"/>
+                <TableColumn fx:id="colImageName" text="IMAGE" prefWidth="90"/>
             </columns>
         </TableView>
     </VBox>
